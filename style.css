@@ -1,3 +1,110 @@
 body{
-background: url("images/porsche.jpg");
+  margin: 0;
+}
+
+.main-container{ 
+  background: url("images/porsche.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+   /*don't need to set a height, let the page grow naturally*/
+  /* width: 100vw; */
+  height: 950px;
+}
+
+.nav-container{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  /*if you're using flex may as well align the contents horizontally and vertically*/
+}
+.top-container{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+/* go back to index.html and wrap these next 2 containers in a div */
+/* style the div so it has the same width and margin as the nav-container */
+/* then use display: flex; flex-direction: column; justify-content: flex-start; and align-items: center; */
+/* u may have to switch the values of "flex-start" and "center" */
+.logo-container {
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.drop-down{
+  display: none;
+  position: absolute;
+  right: 355px;
+  top: 70px;
+  z-index:0;
+  padding: 1rem;
+  height: auto;  
+  width: auto;
+  color: black;
+  background-color:white;
+
+
+}
+.appointment:hover .drop-down{
+  display: block;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: .9rem;
+}
+.middle{
+  justify-content: center;
+  text-align: center;
+  padding: .2rem;
+}
+.repair-container {
+  background-color: lightslategray;
+  color: white;
+  padding: .2rem;
+  width: 15vw;
+  height: 104px;
+  position: absolute;
+  left: 196px;
+  top: 500px; 
+}
+
+.appointment-container {
+  background-color: orange;
+  width: 15vw;
+  display: horizontal;
+  position: absolute;
+  left: 195px;
+  top: 620px;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+   
+ /* height: 70px; */
+}
+
+.box p {
+  color: lightskyblue;
 }
