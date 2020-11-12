@@ -10,11 +10,11 @@ body{
   background-repeat: no-repeat;
    /*don't need to set a height, let the page grow naturally*/
   /* width: 100vw; */
-  height: 950px;
+   height: 980px;  
 }
 
 .nav-container{
-  width: 1000px;
+  /* width: 1000px; */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ body{
   /*if you're using flex may as well align the contents horizontally and vertically*/
 }
 .top-container{
-  width: 1000px;
+  /*width: 1000px;*/
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
@@ -47,6 +47,9 @@ body{
   padding: 2rem;
   margin: 0 2px;
   cursor: pointer;
+}
+.nav-container li:hover{
+  color: lightslategray;
 }
 .drop-down{
   display: none;
@@ -77,13 +80,18 @@ li {
 }
 .repair-container {
   background-color: lightslategray;
+   font-size: 1.4rem; 
   color: white;
-  padding: .2rem;
-  width: 15vw;
-  height: 104px;
+  padding: .5rem;
+  /* width: 15vw; */
+
   position: absolute;
   left: 196px;
-  top: 500px; 
+  top: 460px; 
+}
+
+.span{
+  font-size: .8rem;
 }
 
 .appointment-container {
@@ -91,8 +99,8 @@ li {
   width: 15vw;
   display: horizontal;
   position: absolute;
-  left: 195px;
-  top: 620px;
+  left: 225px;
+  top: 600px;
 }
 
 .bottom-container {
@@ -107,4 +115,34 @@ li {
 
 .box p {
   color: lightskyblue;
+}
+@media screen and (max-width: 480px){
+.logo-container {
+  display:none;
+}
+.repair-container{
+  min-width: 100px;
+  font-size: 1rem;
+  padding: .5rem;
+}
+.appointment-container{
+  min-width: 150px;
+}
+.bottom-container{
+  font-size: .4rem;
+  padding: .5rem;
+}
+}
+@media screen and (max-width: 1024px){
+  .logo-container {
+    display: none;
+  }
+  .nav-container{
+    font-size: .9rem;
+  }
+  .repair-container{
+  min-width: 120px;
+}
+.appointment-container{
+  min-width: 150px;
 }
