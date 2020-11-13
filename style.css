@@ -19,6 +19,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
 
@@ -36,7 +37,7 @@ body{
 /* then use display: flex; flex-direction: column; justify-content: flex-start; and align-items: center; */
 /* u may have to switch the values of "flex-start" and "center" */
 .logo-container {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 3rem;
 }
 
@@ -85,7 +86,7 @@ li {
   padding: .5rem; 
   position: absolute;
   left: 20%;
-  top: 60%;
+  top: 55%;
 }
 
 .span{
@@ -98,8 +99,8 @@ li {
   width: 15vw;
   display: horizontal;
   position: absolute;
-  left: 25%;
-  top: 80%;
+  left: 20%;
+  top: 71%;
 }
 
 .bottom-container {
@@ -127,9 +128,13 @@ li {
   font-size: 1rem;
 }
 .bottom-container{
-  font-size: .4rem;
+  font-size: .3rem;
   padding: .5rem;
 }
+  .box span{
+    padding: .3rem;
+  }
+
 }
 @media screen and (max-width: 1024px){
   .logo-container {
